@@ -1,11 +1,15 @@
 /***********************
-     N I V E L   1
+     L E V E L   1
 ***********************/
+console.log('** + ** + ** + ** + ** + LEVEL 1 + ** + ** + ** + ** + **')
 /* 1.-
 *********/
+console.log('****************  Exercise 1  *******************')
 const multiply = (num1, num2) => num1 * num2;
+// multiply();
 
 const toCelsius = fahrenheit => (5 / 9) * fahrenheit - 32;
+// toCelsius();
 
 const padZeros = (num, totLen) => {
     let numStr = num.toString();
@@ -15,6 +19,7 @@ const padZeros = (num, totLen) => {
     }
     return numStr;
 }
+// padZeros();
 
 const power = (base, exponent) => {
     let result = 1;
@@ -23,12 +28,15 @@ const power = (base, exponent) => {
     }
     return result;
 }
+// power();
 
 const greet = (who) => console.log('Hello ' + who);
+// greet();
 
 
 /* 2.-
 *********/
+console.log('****************  Exercise 2  *******************')
 var users = [
     { firstName: 'Homer', lastName: 'Simpson' },
     { firstName: 'Marge', lastName: 'Simpson' },
@@ -37,33 +45,104 @@ var users = [
     { firstName: 'Maggie', lastName: 'Simpson' }
 ];
 
-users.map((user) => {
+const showName = (users) => {users.map((user) => {
     user.firstName;
    // console.log(user.firstName + ' ' + user.lastName);
 });
+}
+// showName(users);
 
 
 /* 3.-
 *********/
+console.log('****************  Exercise 3  *******************')
 var epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
-/* - 1) Method without reduce();
+// - 1) Method without reduce();
 const readPhrase = () => {
     let phrase = '';
     for(let word of epic){
         phra += (' ' + word) 
     }
-    console.log(phrase);
 }
-phrase();
-*/
+// readPhrase();
+
 // - 2) Method with reduce();
-const readPhrease = epic.reduce((phrase, word) => phrase + ' ' + word);
-readPhrease();
+const read_phrase = epic.reduce((phrase, word) => phrase + ' ' + word);
+// read_phrase();
 
 
 /* 4.-
 *********/
+console.log('****************  Exercise 4  *******************')
+const readPhraseReverse = ([...epic]) => {
+    let phraseReverse = '';
+    for(let i of epic.reverse()){
+        phraseReverse += (i + ' ');
+    }
+    return phraseReverse;
+}
+// readPhraseReverse([...epic]);
+
+
 /* 5.-
 *********/
+console.log('****************  Exercise 5  *******************')
+const doMoreWork = () => {console.log('Executing DO MORE WORK')}
+const b = () => {console.log('Executing function B');}
+const a = async () => {
+    await b();
+    doMoreWork();
+}
+// a();
+
+
 /* 6.-
 *********/
+console.log('****************  Exercise 6  *******************')
+var tasks = [
+{
+   'name' : 'Start React web',
+   'duration' : 120
+},
+{
+   'name' : 'Work out',
+   'duration' : 60
+},
+{
+   'name' : 'Procrastinate on facebook',
+   'duration' : 240
+}
+];
+
+var tasksName = [];
+// 1)- ForEach 
+const getTaskName = () => {tasks.forEach(task => {
+    tasksName.push(task.name);
+    });
+}
+// getTaskName();
+
+// 2)- Map
+const readTaskName = () => {
+       tasksName.push(tasks.map(task => {return task.name}));
+}
+// readTaskName();
+
+
+/***********************
+     L E V E L   2
+***********************/
+console.log('** + ** + ** + ** + ** + LEVEL 2 + ** + ** + ** + ** + **')
+console.log('      ');
+console.log('      ');
+console.log('****************  Exercise 7  *******************')
+
+const calculation = () => {
+    let number1 = parseInt(prompt('First number:'));
+    let number2 = parseInt(prompt('Second number:'));
+   
+    for(let i = 1; i < number2; i++){
+          console.log(`${number1} x ${i} = ${number1 * i}`);
+    }
+}
+// calculation();
