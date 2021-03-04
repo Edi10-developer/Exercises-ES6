@@ -1,5 +1,5 @@
 
-# ES6 Ezercises
+# ES6 Exercises
 
 > Three levels of [IT Academy](https://itacademy.barcelonactiva.cat/) Exercise  using EcmaScript and the functions of Modern JavaScript.
 
@@ -11,12 +11,15 @@
 ### View:
 
  **Level 1**
+
 ![Image](./img/console.png)
 
  **Level 2**
+
 ![Image](./img/model1.png)
 
  **Level 3**
+ 
 ![Image](./img/model2.png)
 
 ## Built With
